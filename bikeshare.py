@@ -15,8 +15,8 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    # Get the user to input their name. Characters, hypens and spaces are valid - numbers are not
-    valid_characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -_'
+    # Get the user to input their name. Characters, hypens, spaces and brackets are valid - numbers are not
+    valid_characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -_(){}[]'
     while True:
         name = input("\nPlease enter your name, using only characters, spaces and hypens: ")
         if all(char in valid_characters for char in name):
