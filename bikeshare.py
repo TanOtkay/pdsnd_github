@@ -219,16 +219,16 @@ def main():
 
         # Can you please show me how to validate the input is only no or yes? I can't for the life of me get this to work with the loop. TIA :)
         i = 0
-        rows_data = input("\nWould you like to see the first 5 rows of data for the city of {}, the month {} and day {} - type yes or no?\n".format(city_input.title(), month_input.title(),day_input.title())).lower()
+        rows_data = input("\nWould you like to see the first 10 rows of data for the city of {}, the month {} and day {} - type yes or no?\n".format(city_input.title(), month_input.title(),day_input.title())).lower()
         pd.set_option('display.max_columns',999) # Source: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.set_option.html
 
         while True:
             if  rows_data == 'no':
                 break
             else:
-                print(df[i:i+5])
-                rows_data = input('\nWould you like to see the next 5 rows of data?\n').lower()
-                i += 5
+                print(df[i:i+10])
+                rows_data = input('\nWould you like to see the next 10 rows of data?\n').lower()
+                i += 10
                 continue
 
         time_stats(df)
