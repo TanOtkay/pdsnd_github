@@ -13,4 +13,4 @@ The code imports the data and answers interesting questions about it by computin
 Chicago, New York City, and Washington csv files
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Udacity <3
